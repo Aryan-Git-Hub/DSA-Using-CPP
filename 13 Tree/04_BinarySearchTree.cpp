@@ -40,7 +40,7 @@ Node* deleteNode(Node* root, int target) {
         return root;
     }
     if(target>root->data) {
-        root->left = deleteNode(root->right, target);
+        root->right = deleteNode(root->right, target);
         return root;
     }
     else {
